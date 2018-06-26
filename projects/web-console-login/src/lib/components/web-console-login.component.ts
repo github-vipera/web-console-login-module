@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'web-console-core'
 
 @Component({
   selector: 'vip-web-console-login',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebConsoleLoginComponent implements OnInit {
 
-  constructor() { }
+  userName = '';
+  userPwd = '';
+
+  constructor(private authService:AuthService) { }
 
   ngOnInit() {
+  }
+
+  onLoginClick() {
+    this.authService.login({ userName: this.userName, password: this.userPwd }).subscribe(()=>{
+      console.log("OK")
+    }, ()=>{
+      console.log("KO")
+    });
   }
 
 }

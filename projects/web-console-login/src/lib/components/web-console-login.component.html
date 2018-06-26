@@ -10,10 +10,10 @@
 
             <div class="web-console-login-panel">
                     <div class="web-console-login-panel-content">
-                        <input type="text" placeholder="username" />
-                        <input type="password" placeholder="password" />
+                        <input type="text" placeholder="username" [(ngModel)]="userName" name="userName" />
+                        <input type="password" placeholder="password" id="txt_password" [(ngModel)]="userPwd" name="userPwd" />
                         <div class="buttons-container">
-                                <div class="cmd"><a href="index.htm" class="btn">Login</a></div>
+                                <div class="cmd"><a href="index.htm" class="btn" (click)="onLoginClick()" >Login</a></div>
                         </div>
                     </div>
             </div>
