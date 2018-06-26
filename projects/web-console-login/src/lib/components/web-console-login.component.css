@@ -1,0 +1,19 @@
+.web-console-login-panel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 68pt;
+    width: 222px;
+}
+
+.web-console-login-panel-content input {
+    margin-top: 10px;
+}
+
+.web-console-login-panel-content .btn {
+    margin-top: 10px;
+}
+
+.web-console-login-panel-content .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
