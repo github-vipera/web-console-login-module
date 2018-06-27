@@ -6,10 +6,14 @@ import { WebAdminModulesProvider } from './web-admin-modules-provider.module';
 import { WebConsoleLoginModule, WebConsoleLoginComponent } from 'web-console-login';
 import { WebAdminConsoleComponent } from 'web-console-core';
 
+
+SetLoginRoute("login");
+
 const appRoutes: Routes = [
   { path: 'login', component: WebConsoleLoginComponent },
   { path: '**', component: WebAdminConsoleComponent }
 ];
+
 
 @NgModule({
   declarations: [
