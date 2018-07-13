@@ -19,8 +19,9 @@ export class WebConsoleLoginComponent implements OnInit {
   onLoginClick() {
     this.authService.login({ userName: this.userName, password: this.userPwd }).subscribe(()=>{
       console.log("OK")
-    }, ()=>{
-      console.log("KO")
+    }, (error)=>{
+      console.log("KO: ", error)
+      alert("Login Error: " + error.message);
     });
     
   }
