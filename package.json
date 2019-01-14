@@ -24,7 +24,7 @@
     "ngx-logger": "^3.3.9",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
-    "web-console-core": "^0.1.0",
+    "web-console-core": "^0.1.2",
     "zone.js": "^0.8.27"
   },
   "devDependencies": {
