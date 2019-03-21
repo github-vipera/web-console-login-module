@@ -11,10 +11,10 @@
             <div class="web-console-login-panel">
                     <div class="web-console-login-panel-content">
                         <form>
-                            <input type="text" placeholder="username" [(ngModel)]="userName" name="userName" />
-                            <input type="password" placeholder="password" id="txt_password" [(ngModel)]="userPwd" name="userPwd" />
-                            <div class="buttons-container">
-                                <button class="btn" (click)="onLoginClick()">Login</button>
+                            <input type="text" placeholder="username" [(ngModel)]="userName" name="userName" class="login-field"/>
+                            <input type="password" placeholder="password" id="txt_password" [(ngModel)]="userPwd" name="userPwd" class="login-field"/>
+                            <div class="buttons-container login-buttons">
+                                <button class="btn login-button" (click)="onLoginClick()">Login</button>
                             </div>
                         </form>
                     </div>

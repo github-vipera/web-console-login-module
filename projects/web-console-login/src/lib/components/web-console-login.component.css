@@ -17,3 +17,16 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.login-button {
+    border: none;  
+    color: #ddd;  
+}
+
+.login-field {
+    width: 100%;
+}
+
+.login-buttons {
+    width: 100%;
+}
