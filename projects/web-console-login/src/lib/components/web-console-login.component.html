@@ -3,7 +3,7 @@
 <div class="web-console-container">
         <header>
             <div class="description">Vipera Motif Admin Console</div>
-            <div class="logo"><img src="assets/img/logo.svg"></div>
+            <div class="logo"><img></div>
             <div class="cmd"></div>
         </header>
         <main class="web-console-page-container">
@@ -11,10 +11,10 @@
             <div class="web-console-login-panel">
                     <div class="web-console-login-panel-content">
                         <form>
-                            <input type="text" placeholder="username" [(ngModel)]="userName" name="userName" />
-                            <input type="password" placeholder="password" id="txt_password" [(ngModel)]="userPwd" name="userPwd" />
-                            <div class="buttons-container">
-                                <button class="btn" (click)="onLoginClick()">Login</button>
+                            <input type="text" placeholder="username" [(ngModel)]="userName" name="userName" class="login-field"/>
+                            <input type="password" placeholder="password" id="txt_password" [(ngModel)]="userPwd" name="userPwd" class="login-field"/>
+                            <div class="buttons-container login-buttons">
+                                <button class="btn login-button" (click)="onLoginClick()">Login</button>
                             </div>
                         </form>
                     </div>
